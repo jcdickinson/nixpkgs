@@ -6,5 +6,6 @@
   '';
   interactiveShellInit = ''
     starship init fish | source
+    alias code codium
   '';
 }

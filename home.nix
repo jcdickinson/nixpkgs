@@ -1,7 +1,8 @@
-{ config, pkgs, ... }:
+{ jonopkgs, ... }:
+{ config, pkgs, ... }@attrs:
 
 let
-  next = { config = config; pkgs = pkgs; self = import ./self.nix {}; };
+  next = attrs // { inherit jonopkgs; self = import ./self.nix {}; };
   self = next.self;
 in
 {
@@ -25,6 +26,6 @@ in
 
   home.packages = import ./packages.nix next;
 
-  home.stateVersion = "22.05";
+  home.stateVersion = "21.11";
   programs.home-manager.enable = true;
 }

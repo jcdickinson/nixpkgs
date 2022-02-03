@@ -44,8 +44,12 @@
   "org/gnome/shell" = {
     disabled-extensions=["user-theme@gnome-shell-extensions.gcampax.github.com"];
     enabled-extensions=["appindicatorsupport@rgcjonas.gmail.com" "dash-to-dock@micxgx.gmail.com"];
-    favorite-apps=["org.gnome.Nautilus.desktop" "waterfox.desktop" "Alacritty.desktop" "code.desktop"];
+    favorite-apps=["org.gnome.Nautilus.desktop" "firefox.desktop" "Alacritty.desktop" "code.desktop"];
     welcome-dialog-last-shown-version="41.1";
+  };
+
+  "org/gnome/settings-daemon/plugins/power" = {
+    power-button-action="interactive";
   };
 
   "org/gnome/shell/extensions/dash-to-dock" = {

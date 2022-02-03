@@ -1,8 +1,8 @@
-{ self, ... }:
+{ self, pkgs, ... }:
 
 {
     enable = true;
     settings = {
-        shell.program = "${self.who.homeDirectory}/.nix-profile/bin/fish";
+        shell.program = "${pkgs.fish}/bin/fish";
     };
 }

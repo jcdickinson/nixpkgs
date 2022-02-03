@@ -1,4 +1,4 @@
-{ pkgs, ... }: with pkgs;
+{ pkgs, jonopkgs, ... }: with pkgs;
 [
   _1password
   starship
@@ -9,4 +9,10 @@
   gitkraken
   element-desktop
   glade
+  discord
+  wget
+  cabextract
+  rustup
+  firefox
+  # jonopkgs.packages.x86_64-linux.waterfox
 ]
